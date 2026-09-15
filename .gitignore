@@ -1,0 +1,14 @@
+# backend
+backend/.venv/
+backend/*.sqlite3
+backend/staticfiles/
+__pycache__/
+*.pyc
+
+# web (see also web/.gitignore)
+web/node_modules/
+web/.next/
+
+.env
+.env.local
+.DS_Store
