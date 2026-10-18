@@ -1,0 +1,21 @@
+name: Image
+
+# Builds the backend's Docker image for amd64 and arm64 and publishes it as
+# ghcr.io/nafiz001/noctiluca-api. The server pulls it; see portfolio-deploy.
+
+on:
+  push:
+    branches: [main]
+    paths: [backend/**, .github/workflows/image.yml]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  image:
+    uses: Nafiz001/portfolio-deploy/.github/workflows/image.yml@main
+    with:
+      image: noctiluca-api
+      context: backend
