@@ -3,6 +3,8 @@
 A deep-sea dive lit by messages from strangers. Django and Channels on the
 back, Next.js and WebGL on the front.
 
+**Live:** https://noctiluca-two.vercel.app (the site on Vercel, the backend on an Oracle Cloud free-tier server).
+
 *Noctiluca scintillans* is the plankton that makes breaking waves glow blue
 when the water moves.
 
